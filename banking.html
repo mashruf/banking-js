@@ -18,33 +18,35 @@
         </h1>
     </header>
     <main class="w-3/4 mx-auto">
+        <!-- deposit, withdraw and total amount display -->
         <section class="grid grid-cols-3 gap-4 mb-8">
             <div class="bg-rose-300 p-8 rounded">
                 <h3 class="text-2xl text-white">Deposit</h3>
-                <h2 class="text-4xl text-white">$00</h2>
+                <h2 class="text-4xl text-white">$<span id="deposit-amount">00</span></h2>
             </div>
             <div class="bg-lime-300 p-8 rounded">
                 <h3 class="text-2xl text-white">Withdraw</h3>
-                <h2 class="text-4xl text-white">$00</h2>
+                <h2 class="text-4xl text-white">$<span id="withdraw-amount">00</span></h2>
             </div>
             <div class="bg-indigo-300 p-8 rounded">
                 <h3 class="text-2xl text-white">Balance</h3>
-                <h2 class="text-4xl text-white">$00</h2>
+                <h2 class="text-4xl text-white">$<span id="total-amount">1000</span></h2>
             </div>
         </section>
+        <!-- getting input for deposit and withdraw Amount -->
         <section class="grid grid-cols-2 gap-4">
             <div class="bg-emerald-400 p-8 rounded">
                 <h3 class="text-2xl">Please Deposit</h3>
-                <input id="user-email" class="block w-3/4 border border-grey-400 rounded mb-4 pl-2" type="email"
+                <input id="deposit-input" class="block w-3/4 border border-grey-400 rounded mb-4 pl-2" type="text"
                     placeholder="$ Amount you want to deposit">
-                <button id="login-submit"
+                <button id="deposit-button"
                     class="bg-yellow-600 px-4 py-2 text-white font-medium rounded">Deposit</button>
             </div>
             <div class="bg-cyan-400 p-8 rounded">
                 <h3 class="text-2xl">Please Withdraw</h3>
-                <input id="user-email" class="block w-3/4 border border-grey-400 rounded mb-4 pl-2" type="email"
+                <input id="withdraw-input" class="block w-3/4 border border-grey-400 rounded mb-4 pl-2" type="text"
                     placeholder="$ Amount you want to withdraw">
-                <button id="login-submit"
+                <button id="withdraw-button"
                     class="bg-yellow-600 px-4 py-2 text-white font-medium rounded">Withdraw</button>
             </div>
 
